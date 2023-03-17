@@ -18,6 +18,9 @@ In this application, you can click wherever you want in the workflow to go on th
 public class SimbaBugTest {
 
   @Test
+  /**
+   * This test checks if the user can go directly to the last step without going through the previous steps.
+   */
   public void simbaBugTest() {
     HomePageSimba homePage = new HomePageSimba(driver);
     By step3Button = By.className(".p-steps-item:nth-child(3)");
